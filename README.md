@@ -2,8 +2,8 @@
 Building a Car Counter with Python and OpenCV
 
 This is a beginner computer vision project. It is the accompanying code for videos that can be found here:
-- TT:
-- YT:
+- [TT](https://www.tiktok.com/@codingai/video/7223464864193269038)
+- [YT](https://youtu.be/Lo4g5Rbqmrs)
 
 This project is intended as a demonstration, and there will be no support.
 
