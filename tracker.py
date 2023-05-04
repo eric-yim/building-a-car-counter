@@ -15,6 +15,7 @@ class TrackedObject:
             self.cross_count+=1
             if self.cross_count>=self.reset_threshold:
                 self.has_crossed=False
+                self.start_centroid = [(box[0]+box[2])/2,(box[1]+box[3])/2]#x,y
     def unused(self):
         self.unused_count+=1
     def get_has_crossed(self):
