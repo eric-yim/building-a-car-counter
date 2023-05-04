@@ -82,18 +82,17 @@ class Tracker:
                 self.count+=1
         if self.print:
             self.print_info()
-    def print_info(self):
-        info = {
-            "OldBoxes": len(remove_oboxes),
-            "RemovedBoxes": sum(remove_oboxes),
-            "Matches": sum(used_boxes),
-            "NewBoxes": len(new_boxes),
-            "NewBoxesAppended":len(self.objects)-temp,
-            "Total": len(self.objects)
-        }
-        for k,v in info.items():
-            print(f"{k}:{v}")
-        print('='*40)
+            info = {
+                "OldBoxes": len(remove_oboxes),
+                "RemovedBoxes": sum(remove_oboxes),
+                "Matches": sum(used_boxes),
+                "NewBoxes": len(new_boxes),
+                "NewBoxesAppended":len(self.objects)-temp,
+                "Total": len(self.objects)
+            }
+            for k,v in info.items():
+                print(f"{k}:{v}")
+            print('='*40)
 
        
 
