@@ -11,6 +11,7 @@ class TrackedObject:
         self.box = box
         self.unused_count = 0
         self.current_centroid = [(box[0]+box[2])/2,(box[1]+box[3])/2]#x,y
+        # Resets for case when crossed car passes box onto opposite direction car
         if self.has_crossed:
             self.cross_count+=1
             if self.cross_count>=self.reset_threshold:
